@@ -1,0 +1,14 @@
+compile = ["dune", "build"]
+run = ["dune", "build"]
+entrypoint = "src/markov.ml"
+hidden = ["_build"]
+onBoot = "utop -version"
+
+[languages.OCaml]
+pattern = "**/*.{ml,mli}"
+
+[languages.OCaml.languageServer]
+start = "ocamllsp"
+
+[nix]
+channel = "stable-23_11"
