@@ -241,7 +241,7 @@ compute_distribution ["a"; "b"; "c"; "c"; "c"; "c"; "c";  "b"]
 ```
 retourne
 ```ocaml
-{ occurrences = 10 ;
+{ occurrences = 8 ;
   followers = [("c", 5); ("b", 2); ("a", 1)] }
 ```
 #### Conseil :
