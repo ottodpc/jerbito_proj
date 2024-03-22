@@ -144,7 +144,7 @@ est aussi un résultat valide.
 
 ### Question 4
 
-En utilisant `add_assoc`, écrivez la fonction `build_table_assoc : string list -> followers_assoc` qui construit une liste associative liant chaque mot présent dans le texte d'entrée à tous ses suivants possibles (y compris les doublons). La table doit également contenir "START" qui pointe vers le premier mot et "STOP" qui est pointé par le dernier mot.
+En utilisant `add_follower_assoc`, écrivez la fonction `build_table_assoc : string list -> followers_assoc` qui construit une liste associative liant chaque mot présent dans le texte d'entrée à tous ses suivants possibles (y compris les doublons). La table doit également contenir "START" qui pointe vers le premier mot et "STOP" qui est pointé par le dernier mot.
 
 Par exemple, une table correcte (et minimale) pour `"xx yy zz yy xx yy"` ressemble à :
 ```ocaml
